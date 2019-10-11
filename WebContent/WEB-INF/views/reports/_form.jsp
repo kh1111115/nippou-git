@@ -26,5 +26,12 @@
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 
+<label for="intime">出勤時間</label><br />
+<input type="time" name="intime" value="${report.intime}" />
+<br /><br />
+
+<label for="outtime">退勤時間</label><br />
+<input type="time" name="outtime" value="${report.outtime}" /><br /><br />
+
 <input type="hidden" name="_token" value="${_token}" />
 <button type="submit">投稿</button>

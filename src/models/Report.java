@@ -61,6 +61,28 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "intime", length = 255, nullable = false)
+    private String intime;
+
+    @Column(name = "outtime", length = 255, nullable = false)
+    private String outtime;
+
+    public String getIntime() {
+        return intime;
+    }
+
+    public void setIntime(String intime) {
+        this.intime = intime;
+    }
+
+    public String getOuttime() {
+        return outtime;
+    }
+
+    public void setOuttime(String outtime) {
+        this.outtime = outtime;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -116,4 +138,5 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
 }
